@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		42896D352DFC97BF0004318B /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D342DFC97BF0004318B /* FacebookCore */; };
+		42896D372DFC97BF0004318B /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D362DFC97BF0004318B /* FacebookLogin */; };
+		42896D392DFC97BF0004318B /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D382DFC97BF0004318B /* FacebookShare */; };
+		42896D3C2DFC97FD0004318B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D3B2DFC97FD0004318B /* GoogleSignIn */; };
+		42896D3E2DFC97FD0004318B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D3D2DFC97FD0004318B /* GoogleSignInSwift */; };
+		42896D412DFC98440004318B /* connect in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D402DFC98440004318B /* connect */; };
+		42896D442DFC98E60004318B /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D432DFC98E60004318B /* FirebaseAppCheck */; };
+		42896D462DFC98E60004318B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D452DFC98E60004318B /* FirebaseAuth */; };
+		42896D482DFC98E60004318B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D472DFC98E60004318B /* FirebaseCore */; };
+		42896D4A2DFC98E60004318B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 42896D492DFC98E60004318B /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		42896CFB2DFC96C30004318B /* King.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = King.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +36,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42896D3E2DFC97FD0004318B /* GoogleSignInSwift in Frameworks */,
+				42896D372DFC97BF0004318B /* FacebookLogin in Frameworks */,
+				42896D3C2DFC97FD0004318B /* GoogleSignIn in Frameworks */,
+				42896D4A2DFC98E60004318B /* FirebaseFirestore in Frameworks */,
+				42896D412DFC98440004318B /* connect in Frameworks */,
+				42896D442DFC98E60004318B /* FirebaseAppCheck in Frameworks */,
+				42896D352DFC97BF0004318B /* FacebookCore in Frameworks */,
+				42896D392DFC97BF0004318B /* FacebookShare in Frameworks */,
+				42896D482DFC98E60004318B /* FirebaseCore in Frameworks */,
+				42896D462DFC98E60004318B /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,16 @@
 			);
 			name = King;
 			packageProductDependencies = (
+				42896D342DFC97BF0004318B /* FacebookCore */,
+				42896D362DFC97BF0004318B /* FacebookLogin */,
+				42896D382DFC97BF0004318B /* FacebookShare */,
+				42896D3B2DFC97FD0004318B /* GoogleSignIn */,
+				42896D3D2DFC97FD0004318B /* GoogleSignInSwift */,
+				42896D402DFC98440004318B /* connect */,
+				42896D432DFC98E60004318B /* FirebaseAppCheck */,
+				42896D452DFC98E60004318B /* FirebaseAuth */,
+				42896D472DFC98E60004318B /* FirebaseCore */,
+				42896D492DFC98E60004318B /* FirebaseFirestore */,
 			);
 			productName = King;
 			productReference = 42896CFB2DFC96C30004318B /* King.app */;
@@ -94,6 +127,12 @@
 			);
 			mainGroup = 42896CF22DFC96C30004318B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				42896D332DFC97BF0004318B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				42896D3A2DFC97FD0004318B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				42896D3F2DFC98440004318B /* XCLocalSwiftPackageReference "../connect" */,
+				42896D422DFC98E60004318B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 42896CFC2DFC96C30004318B /* Products */;
 			projectDirPath = "";
@@ -272,10 +311,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Debug;
@@ -311,10 +351,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
@@ -341,6 +382,92 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		42896D3F2DFC98440004318B /* XCLocalSwiftPackageReference "../connect" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../connect;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42896D332DFC97BF0004318B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+		42896D3A2DFC97FD0004318B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		42896D422DFC98E60004318B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42896D342DFC97BF0004318B /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D332DFC97BF0004318B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		42896D362DFC97BF0004318B /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D332DFC97BF0004318B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		42896D382DFC97BF0004318B /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D332DFC97BF0004318B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		42896D3B2DFC97FD0004318B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D3A2DFC97FD0004318B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		42896D3D2DFC97FD0004318B /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D3A2DFC97FD0004318B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		42896D402DFC98440004318B /* connect */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = connect;
+		};
+		42896D432DFC98E60004318B /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D422DFC98E60004318B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		42896D452DFC98E60004318B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D422DFC98E60004318B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		42896D472DFC98E60004318B /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D422DFC98E60004318B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		42896D492DFC98E60004318B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42896D422DFC98E60004318B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42896CF32DFC96C30004318B /* Project object */;
 }
